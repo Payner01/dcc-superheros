@@ -11,7 +11,7 @@
     <ul>
         {% for hero in all_heroes %}
         <li> <h2>{{hero.name}} - <a href="{% url 'superheroes:detail' hero.id %}">Click for Details</a> - 
-            <a href="{% url 'superheroes:delete' hero.id %}">Delete</a>
+            <a href="{% url 'superheroes:delete' hero.id %}">Delete</a> - 
             <a href="{% url 'superheroes:edit' hero.id %}">Edit</a></h2> </li>
         {% endfor %}
     </ul>
