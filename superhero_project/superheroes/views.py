@@ -43,6 +43,7 @@ def delete(request, hero_id):
     }
     return render(request, 'superheroes/delete.html', context)
 
+
 def edit(request, hero_id):
     current_hero = Superhero.objects.get(pk=hero_id)
     context = {

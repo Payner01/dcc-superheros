@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +8,9 @@
     <title>Superhero Index</title>
 </head>
 <body>
-    <h1>list of Heroes</h1>
+    <img src="{% static '\media\ironman.jpg' %}" alt="picture of ironman">
+        <h3>"I am Iron Man"</h3>
+    <h1>List of Heroes</h1>
     <ul>
         {% for hero in all_heroes %}
         <li> <h2>{{hero.name}} - <a href="{% url 'superheroes:detail' hero.id %}">Click for Details</a> - 
