@@ -128,11 +128,6 @@ STATIC_URL = 'static/'
 MEDIA_URL = 'media/'
 
 STATIC_ROOT = 'superhero_project\static' 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-STATIC_DIRS = (
-    os.path.join(BASE_DIR, 'static')
-)
 
 
 
